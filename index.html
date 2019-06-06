@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Lucky Sevens</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+</head>
+
+<body>
+    <h1>Lucky Sevens</h1>
+    <div id="initalGame">
+        <label for="startingBet">Starting Bet:</label>
+        <!-- The program asks the user how many dollars they have to bet. -->
+        <input id="startingBet" type="number">
+        <br>
+        <!-- When the user clicks the Play button, the program then rolls the dice repeatedly until all the money is gone. -->
+        <button id="play" onclick="startGame()">Play</button>
+    </div>
+    <hr>
+    <div id="endGame">
+        <h2>Results</h2>
+        <table>
+            <tr id="darker">
+                <td>Starting Bet</td>
+                <td>$<span id="startingBetAmount"></span></td>
+            </tr>
+            <tr>
+                <td>Total Rolls Before Going Broke</td>
+                <td><span id="rollsBeforeBroke"></span></td>
+            </tr>
+            <tr>
+                <td>Highest Amount Won</td>
+                <td>$<span id="highestWon"></span></td>
+            </tr>
+            <tr>
+                <td>Roll Count at Highest Amount Won</td>
+                <td><span id="rollAtHighest"></span></td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>
